@@ -228,16 +228,8 @@ Loss:   L1(predicted_ct, original_ct)
 
 ## Citation
 
-If you use this code, please cite the original paper:
+If you use this code, please cite the original paper
 
-```bibtex
-@article{xray2025,
-  title={[Paper Title]},
-  author={[Authors]},
-  journal={arXiv preprint arXiv:2503.17804},
-  year={2025}
-}
-```
 
 ## Requirements
 
