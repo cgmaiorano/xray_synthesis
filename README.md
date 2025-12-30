@@ -164,12 +164,23 @@ Calculate metrics:
 python main.py --evaluate \
     --results_dir ./results/
 ```
+## Complete Pipeline Command
+
+Run the entire pipeline in one command:
+
+```bash
+python main.py --preprocess --train --test --evaluate \
+    --data_dir ./LIDC-IDRI/ \
+    --num_volumes 200 \
+    --epochs 100 \
+    --num_examples 10
+```
 
 ## Dataset
 
 **Source:** LIDC-IDRI (Lung Image Database Consortium)
 
-**Processing:**
+**Preprocessing:**
 - Input: DICOM CT scans
 - Normalization: HU window [-600, 900] (lung window)
 - Resampling: 2mm isotropic spacing
@@ -213,19 +224,7 @@ Loss:   L1(predicted_ct, original_ct)
 
 - **Epochs:** 100
 - **Best Validation Loss:** 0.0834 
-- **Training Time:** ~20 hours on [GPU model]
-
-## 📝 Key Equations
-
-**Back-Projection (Equation 1):**
-```
-V(x, y, z) = I(x, y)  ∀z
-```
-
-**Forward-Projection / DRR (Equation 9):**
-```
-I(u, v) = ∫ V(x, y, z) dz
-```
+- **Training Time:** ~20 hours
 
 ## Citation
 
@@ -252,15 +251,3 @@ If you use this code, please cite the original paper:
 This project is licensed under the MIT License - see LICENSE file for details.
 
 ---
-
-## Complete Pipeline Command
-
-Run the entire pipeline in one command:
-
-```bash
-python main.py --preprocess --train --test --evaluate \
-    --data_dir ./LIDC-IDRI/ \
-    --num_volumes 200 \
-    --epochs 100 \
-    --num_examples 10
-```
