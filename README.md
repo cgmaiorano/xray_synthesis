@@ -70,16 +70,22 @@ Example synthesis result:
 
 ```
 xray-synthesis/
-├── preprocess.py          # DICOM → normalized numpy volumes
-├── projection.py          # Forward/back-projection operations
+├── preprocess.py         # DICOM → normalized numpy volumes
+├── projection.py         # Forward/back-projection operations
 ├── model.py              # 3D U-Net architecture
 ├── dataset.py            # PyTorch dataset loader
 ├── train.py              # Training script
-├── test.py          # Generate predictions
-├── evaluate_metrics.py           # Calculate PSNR/SSIM metrics
+├── test.py               # Generate predictions
+├── evaluate_metrics.py   # Calculate PSNR/SSIM metrics
 ├── main.py               # Complete pipeline orchestrator
 ├── requirements.txt      # Python dependencies
 ├── README.md             # This file
+├── LIDC-IDRI/            # Raw dicom CT volumes
+│   ├── X.X.X....XXXX
+│   │   ├── 1-001.dcm
+│   │   ├── 1-002.dcm
+│   │   ├── ...
+│   └── ...
 ├── processed_volumes/    # Preprocessed CT volumes
 │   ├── volume_000.npy
 │   ├── ...
