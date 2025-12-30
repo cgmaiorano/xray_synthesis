@@ -60,10 +60,10 @@ Example synthesis result:
 └──────┬──────┘
        │
        ▼
-┌─────────────┐
+┌─────────-────┐
 │ Lateral X-ray│ Output: Synthesized 2D projection (128×128)
 │    (90°)     │
-└─────────────┘
+└──────────-───┘
 ```
 
 ## Project Structure
@@ -105,8 +105,8 @@ xray-synthesis/
 
 ```bash
 # Clone repository
-git clone <your-repo-url>
-cd xray-synthesis
+git clone https://github.com/cgmaiorano/xray_synthesis.git
+cd xray_synthesis
 
 # Install dependencies
 pip install torch torchvision numpy scipy pydicom scikit-image tqdm matplotlib
