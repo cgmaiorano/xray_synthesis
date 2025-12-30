@@ -2,7 +2,7 @@ from tcia_utils import nbia
 import os
 import pandas as pd
 
-download_dir = "./LIDC-IDRI-subset"
+download_dir = "./LIDC-IDRI"
 
 series_list = nbia.getSeries(collection="LIDC-IDRI", modality="CT")
 print(f"Found {len(series_list)} CT series")
