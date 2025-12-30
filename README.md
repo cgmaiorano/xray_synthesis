@@ -30,8 +30,6 @@ Example synthesis result:
 <details>
 <summary>View More Examples</summary>
 
-| Example 1 | Example 2 | Example 3 |
-|-----------|-----------|-----------|
 | ![](./results/example_01.png) | ![](./results/example_02.png) | ![](./results/example_03.png) |
 | ![](./results/example_04.png) | ![](./results/example_05.png) | ![](./results/example_06.png) |
 
