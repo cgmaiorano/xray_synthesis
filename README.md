@@ -109,7 +109,7 @@ git clone https://github.com/cgmaiorano/xray_synthesis.git
 cd xray_synthesis
 
 # Install dependencies
-pip install torch torchvision numpy scipy pydicom scikit-image tqdm matplotlib
+pip install -r requirements.txt
 ```
 
 ### 2. Data Preparation
